@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;700&family=Raleway:wght@400;500&family=Roboto:wght@900&family=Source+Sans+Pro&display=swap" rel="stylesheet">  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+  <title>Project: basic website (JS + responsive design)</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-wrapper container">
+      <div class="navigation">
+        <div class="logo"><a href="/"><img src="images/logo.svg" alt="logo"></a></div>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#news" class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#" class="social_item">
+            <svg><use xlink:href="#facebook"></use></svg>
+          </a>
+          <a href="#" class="social_item">
+            <svg><use xlink:href="#twitter"></use></svg>
+          </a>
+          <a href="#" class="social_item">
+            <svg><use xlink:href="#instagram"></use></svg>
+          </a>
+        </div>    
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>      
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="about" class="about">
+      <div class="swiper about-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/background_img.svg" alt="background_img">
+            <div class="content">
+              <h2>SIMPLE & MODERN</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/background_img.svg" alt="background_img">
+            <div class="content">
+              <h2>DESIGNER'S BUG &#128512;</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>  
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/background_img.svg" alt="background_img">
+            <div class="content">
+              <h2>AGAIN &#128512;</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>  
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/background_img.svg" alt="background_img">
+            <div class="content">
+              <h2>AGAIN &#128512;</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>  
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/background_img.svg" alt="background_img">
+            <div class="content">
+              <h2>AND AGAIN &#128512;</h2>
+              <p>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</p>  
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <a href="#project">
+        <svg><use xlink:href="#arrow"></use></svg>
+      </a>
+    </section>
+    <section id="project" class="project">
+      <div class="project-title">
+        <h2 project-title>What we do</h2>
+      </div>
+      <div class="project-section container">
+        <div class="project-section-img">
+          <div class="img_front_1">
+            <img src="images/trade_center.svg" alt="Trade center New York">
+          </div>
+        </div>
+        <div class="about_item">
+          <h5 class="subtitle">One world</h5>
+          <h3 class="title">Trade center</h3>
+          <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+          <div class="button">
+            <a href="/"><button>More details</button></a>
+          </div>
+          <div class="map-link">
+            <span><svg><use xlink:href="#location"></use></svg></span>
+            <a href="https://goo.gl/maps/iqeMzAVgSWth5H1N6">New Yokr City, United States - 1776 feet</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-section container">
+        <div class="about_item">
+          <h5 class="subtitle">International</h5>
+          <h3 class="title">Commerce centre</h3>
+          <p>Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+          <div class="button">
+            <a href="/"><button>More details</button></a>
+          </div>
+          <div class="map-link">
+            <span><svg><use xlink:href="#location"></use></svg></span>
+            <a href="https://www.google.com/maps/place/%D0%9C%D1%96%D0%B6%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B8%D0%B9+%D0%BA%D0%BE%D0%BC%D0%B5%D1%80%D1%86%D1%96%D0%B9%D0%BD%D0%B8%D0%B9+%D1%86%D0%B5%D0%BD%D1%82%D1%80,+1+Austin+Rd+W,+West+Kowloon,+%D0%93%D0%BE%D0%BD%D0%BA%D0%BE%D0%BD%D0%B3/@22.3034032,114.1576211,17z/data=!3m1!4b1!4m6!3m5!1s0x340400911539be4f:0x828e9dd48e2b3fa2!8m2!3d22.3034032!4d114.1601907!16zL20vMDJocDU1">Hong Kong - 1588 feet</a>
+          </div>
+        </div>
+        <div class="project-section-img">
+          <div class="img_front_2">
+            <img src="images/commerce_center.svg" alt="Commerce center Hong Kong">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news" class="news">
+        <img src="images/background_news.svg" alt="background_img">
+      <div class="wrapper">
+        <h2 class="title">LATEST NEWS</h2>
+        <div class="swiper news-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="cards_items">
+                  <div><img src="images/news_img1.svg" alt="news_img1"></div>
+                  <div class="news_text">
+                    <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                    <p>Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="description">
+                      <div><img src="images/news_descr1.svg" alt="news_descr1"></div>
+                      <h4>ALJA BRUN</h4>
+                      <p>20 Jan 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="cards_items">
+                  <div><img src="images/news_img2.svg" alt="news_img2"></div>
+                  <div class="news_text">
+                    <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                    <p>Having a home based business is a wonderful asset to your life...</p>
+                    <div class="description">
+                      <img src="images/news_descr2.svg" alt="news_descr2">
+                      <h4>DOMINIC FREEMAN</h4>
+                      <p>13 Dec 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="cards_items">
+                  <div><img src="images/news_img3.svg" alt="news_img3"></div>
+                  <div class="news_text">
+                    <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                    <p>There are many things that are important to catalog design...</p>
+                    <div class="description">
+                      <img src="images/news_descr3.svg" alt="news_descr3">
+                      <h4>ALICE WARD</h4>
+                      <p>30 Nov 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="cards_items">
+                  <div><img src="images/news_img1.svg" alt="news_img1"></div>
+                  <div class="news_text">
+                    <h3>SEE THE UNMATCHED BEAUTY OF THE GREAT.</h3>
+                    <p>Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="description">
+                      <div><img src="images/news_descr1.svg" alt="news_descr1"></div>
+                      <h4>ALJA BRUN</h4>
+                      <p>20 Jan 2020</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="cards_items">
+                  <div><img src="images/news_img2.svg" alt="news_img2"></div>
+                  <div class="news_text">
+                    <h3>EFFECTIVE ADVERTISING POINTERS.</h3>
+                    <p>Having a home based business is a wonderful asset to your life...</p>
+                    <div class="description">
+                      <img src="images/news_descr2.svg" alt="news_descr2">
+                      <h4>DOMINIC FREEMAN</h4>
+                      <p>13 Dec 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cards">
+                <div class="cards_items">
+                  <div><img src="images/news_img3.svg" alt="news_img3"></div>
+                  <div class="news_text">
+                    <h3>HYPNOTIZE YOURSELF INTO THE GHOST.</h3>
+                    <p>There are many things that are important to catalog design...</p>
+                    <div class="description">
+                      <img src="images/news_descr3.svg" alt="news_descr3">
+                      <h4>ALICE WARD</h4>
+                      <p>30 Nov 2019</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="gallery">
+      <h2 class="title">GALLERY</h2>
+      <div class="gallery_items">
+        <div class="gallery_item img-1">
+          <img src="images/gallery1.png" alt="image1" data-fancybox="gallery">
+        </div>
+        <div class="gallery_item img-2">
+          <img src="images/gallery2.png" alt="image2" data-fancybox="gallery">
+        </div>
+        <div class="gallery_item img-3">
+          <img src="images/gallery3.png" alt="image3" data-fancybox="gallery">
+        </div>
+        <div class="gallery_item img-4">
+          <img src="images/gallery4.png" alt="image4" data-fancybox="gallery">
+        </div>
+        <div class="gallery_item img-5">
+          <img src="images/gallery5.png" alt="image5" data-fancybox="gallery">
+        </div>
+      </div>
+      <button>SEE MORE</button>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="map">
+        <div id="googleMap" style="width:100%;height:700px;"></div>
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlZQJXVvR26wkXhgi02j3VnPL3DpyfdKI&callback=initMap"></script>  
+      </div>
+      <div class="contacts_form">
+        <img src="images/bg_contacts.svg" alt="background_img"> 
+        <h2 class="title">GET IN TOUCH</h2>
+        <div class="contacts_info">
+          <ul class="info">
+            <li><svg><use xlink:href="#location"></use></svg><a href="https://www.google.com/maps/place/Homewood+Suites+by+Hilton+Boston+Seaport+District/@42.3440055,-71.0377423,17z/data=!3m1!4b1!4m9!3m8!1s0x89e37bd14d3161c3:0x1e29d3109b943c59!5m2!4m1!1i2!8m2!3d42.3440055!4d-71.0377423!16s%2Fg%2F11jtbmr2yh">91 Nolan Extensions Suite 670</a></li>
+            <li><svg><use xlink:href="#phone"></use></svg><a href="tel:+001 356-868-2454">001 356-868-2454</a></li>
+            <li><svg><use xlink:href="#email"></use></svg><a href="mailto:montichello@service.com">montichello@service.com</a></li>
+            <li><svg><use xlink:href="#time"></use></svg><a href="/">From 07:05AM to 19:30PM</a></li>
+          </ul>
+          <form action="" method="POST" class="form">
+            <div class="input_text"><input type="text" name="name" minlength="3" placeholder="Mollie Medina" required></div>
+            <div class="input_email"><input type="email" name="email" minlength="5" placeholder="Email" required></div>
+            <div class="input_button"><input type="submit" value="SUBMIT"></div>
+          </form>
+        </div>
+      </div>
+   </section>
+  </main>
+  <footer>
+    <div class="footer-wrapper container">
+      <div class="navigation">
+        <div class="logo_footer">
+          <a href="/"><img src="images/logo.svg" alt="logo"></a>
+          <p>Copyrights © 2020 Montichello</p>
+        </div>
+        <div class="social">
+          <a href="#" class="social_item">
+            <svg><use xlink:href="#facebook"></use></svg>
+          </a>
+          <a href="#" class="social_item">
+            <svg><use xlink:href="#twitter"></use></svg>
+          </a>
+          <a href="#" class="social_item">
+            <svg><use xlink:href="#instagram"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0">
+    <symbol id="facebook" viewBox="0 0 12 20">
+     <path d="M10.7725 11.25L11.3429 7.63047H7.77636V5.28164C7.77636 4.29141 8.27457 3.32617 9.8719 3.32617H11.4933V0.244531C11.4933 0.244531 10.0219 0 8.61514 0C5.67801 0 3.75816 1.73359 3.75816 4.87187V7.63047H0.493301V11.25H3.75816V20H7.77636V11.25H10.7725Z" />
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 21 18">
+      <path d="M18.9375 4.92638C18.9502 5.10403 18.9502 5.28173 18.9502 5.45938C18.9502 10.8781 14.8258 17.1218 7.28776 17.1218C4.96542 17.1218 2.80807 16.4492 0.993347 15.2817C1.32331 15.3198 1.64053 15.3325 1.98319 15.3325C3.8994 15.3325 5.66339 14.6853 7.07202 13.5812C5.26999 13.5431 3.75983 12.3629 3.23952 10.7386C3.49335 10.7766 3.74714 10.802 4.01366 10.802C4.38167 10.802 4.74971 10.7512 5.09233 10.6624C3.21417 10.2817 1.8055 8.63196 1.8055 6.63958V6.58884C2.35116 6.89341 2.98573 7.08376 3.65827 7.10911C2.55421 6.37306 1.83089 5.11673 1.83089 3.6954C1.83089 2.93399 2.03389 2.23603 2.38925 1.62688C4.40702 4.11419 7.44003 5.73853 10.841 5.91622C10.7776 5.61165 10.7395 5.29442 10.7395 4.97716C10.7395 2.71825 12.5669 0.878174 14.8385 0.878174C16.0187 0.878174 17.0846 1.3731 17.8334 2.17259C18.7598 1.99493 19.6481 1.65228 20.4349 1.18274C20.1303 2.13454 19.4831 2.93403 18.6329 3.44161C19.4578 3.35282 20.2573 3.12435 20.9933 2.80712C20.435 3.61927 19.737 4.34259 18.9375 4.92638Z" />
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 21 20">
+      <path d="M10.9978 15.1277C8.15943 15.1277 5.87002 12.8383 5.87002 10C5.87002 7.16166 8.15943 4.87225 10.9978 4.87225C13.8361 4.87225 16.1255 7.16166 16.1255 10C16.1255 12.8383 13.8361 15.1277 10.9978 15.1277ZM10.9978 6.6663C9.16356 6.6663 7.66406 8.16133 7.66406 10C7.66406 11.8387 9.15909 13.3337 10.9978 13.3337C12.8364 13.3337 14.3315 11.8387 14.3315 10C14.3315 8.16133 12.832 6.6663 10.9978 6.6663ZM17.5313 15.3375C17.5313 14.6725 16.9958 14.1415 16.3353 14.1415C15.6703 14.1415 15.1392 14.677 15.1392 15.3375C15.1392 15.998 15.6748 16.5335 16.3353 16.5335C16.9958 16.5335 17.5313 15.998 17.5313 15.3375ZM20.9275 14.1236C20.8516 15.7258 20.4857 17.1449 19.3119 18.3142C18.1427 19.4834 16.7235 19.8494 15.1214 19.9297C13.4702 20.0234 8.52092 20.0234 6.86968 19.9297C5.272 19.8538 3.85284 19.4879 2.67912 18.3186C1.50541 17.1494 1.14392 15.7302 1.06359 14.1281C0.969872 12.4768 0.969872 7.52761 1.06359 5.87638C1.13946 4.27424 1.50541 2.85507 2.67912 1.68582C3.85284 0.516567 5.26754 0.15062 6.86968 0.0702896C8.52092 -0.0234299 13.4702 -0.0234299 15.1214 0.0702896C16.7235 0.146156 18.1427 0.512104 19.3119 1.68582C20.4812 2.85507 20.8471 4.27424 20.9275 5.87638C21.0212 7.52761 21.0212 12.4724 20.9275 14.1236ZM18.7943 4.10465C18.4462 3.22995 17.7723 2.55606 16.8931 2.2035C15.5766 1.68136 12.4526 1.80185 10.9978 1.80185C9.54289 1.80185 6.41448 1.68582 5.10242 2.2035C4.22771 2.5516 3.55383 3.22548 3.20127 4.10465C2.67912 5.42118 2.79962 8.54513 2.79962 10C2.79962 11.4549 2.68358 14.5833 3.20127 15.8953C3.54937 16.7701 4.22325 17.4439 5.10242 17.7965C6.41894 18.3186 9.54289 18.1981 10.9978 18.1981C12.4526 18.1981 15.5811 18.3142 16.8931 17.7965C17.7678 17.4484 18.4417 16.7745 18.7943 15.8953C19.3164 14.5788 19.1959 11.4549 19.1959 10C19.1959 8.54513 19.3164 5.41671 18.7943 4.10465Z" />
+    </symbol>
+    <symbol id="blue_rectangle" viewBox="0 0 585 470">
+      <rect width="585" height="470" fill="#55B7FF"/>
+    </symbol>
+    <symbol id="arrow" viewBox="0 0 384 512">
+      <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+    </symbol>
+    <symbol id="location" viewBox="0 96 960 960">
+      <path d="M480.089 566Q509 566 529.5 545.411q20.5-20.588 20.5-49.5Q550 467 529.411 446.5q-20.588-20.5-49.5-20.5Q451 426 430.5 446.589q-20.5 20.588-20.5 49.5Q410 525 430.589 545.5q20.588 20.5 49.5 20.5ZM480 897q133-121 196.5-219.5T740 504q0-117.79-75.292-192.895Q589.417 236 480 236t-184.708 75.105Q220 386.21 220 504q0 75 65 173.5T480 897Zm0 79Q319 839 239.5 721.5T160 504q0-150 96.5-239T480 176q127 0 223.5 89T800 504q0 100-79.5 217.5T480 976Zm0-472Z"/>    
+    <symbol id="phone" viewBox="0 96 960 960">
+      <path d="M795 936q-122 0-242.5-60T336 720q-96-96-156-216.5T120 261q0-19.286 12.857-32.143T165 216h140q13.611 0 24.306 9.5Q340 235 343 251l27 126q2 14-.5 25.5T359 422L259 523q56 93 125.5 162T542 802l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840 740 840 756v135q0 19.286-12.857 32.143T795 936ZM229 468l81-82-23-110H180q0 39 12 85.5T229 468Zm369 363q41 19 89 31t93 14V769l-103-21-79 83ZM229 468Zm369 363Z"/>  
+    <symbol id="time" viewBox="0 96 960 960">
+      <path d="m627 769 45-45-159-160V363h-60v225l174 181ZM480 976q-82 0-155-31.5t-127.5-86Q143 804 111.5 731T80 576q0-82 31.5-155t86-127.5Q252 239 325 207.5T480 176q82 0 155 31.5t127.5 86Q817 348 848.5 421T880 576q0 82-31.5 155t-86 127.5Q708 913 635 944.5T480 976Zm0-400Zm0 340q140 0 240-100t100-240q0-140-100-240T480 236q-140 0-240 100T140 576q0 140 100 240t240 100Z"/>
+    </symbol>
+    <symbol id="email" viewBox="0 0 512 512">
+      <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
+    </symbol>
+  </svg>
+  <script src="script.js"></script>
+</body>
+</html>
