@@ -1,0 +1,297 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.movies .movie img {
+  width: 100%;
+  height: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .movies {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.single-movie {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 60px;
+}
+.single-movie img {
+  width: 50%;
+  float: right;
+}
+.single-movie .about_single_movie {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10%;
+  font-family: "Montserrat", sans-serif;
+  line-height: 28px;
+  width: 50%;
+  float: left;
+}
+.single-movie .about_single_movie .title {
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(22, 22, 207);
+}
+.single-movie .about_single_movie h4 {
+  font-weight: 700;
+}
+.single-movie .about_single_movie h5 {
+  color: rgb(22, 22, 207);
+}
+.single-movie .about_single_movie .movie_about {
+  width: 80%;
+}
+.single-movie .about_single_movie span {
+  font-weight: 700;
+}
+.single-movie .about_single_movie h3 {
+  color: rgb(22, 22, 207);
+  font-weight: 700;
+}
+
+.search {
+  background-color: #fff;
+}
+.search input {
+  border: none;
+  height: fit-content;
+  z-index: 2;
+}
+
+.swiper-wrapper {
+  padding: 60px;
+}
+
+.contacts {
+  margin: 20px auto;
+}
+.contacts .contacts_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts .contacts_header img {
+  position: relative;
+  width: 100vw;
+  z-index: 0;
+  object-fit: contain;
+}
+.contacts .contacts_header h1 {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  font-size: calc(30px * 25 * ((100vw - 320px) / 1090));
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav li a img {
+  width: 20px;
+  height: 20px;
+}
+
+footer {
+  background-color: #000;
+  padding: 60px 30px;
+}
+footer .footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 15px;
+}
+footer .footer-top .mail, footer .footer-top .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-top a {
+  font-size: calc(30px * 15 * ((100vw - 320px) / 1090));
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.3s ease-out 0s;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+footer .footer-top a:hover {
+  color: rgb(234, 186, 26);
+}
+footer .footer-top span {
+  font-size: 16px;
+  color: #777;
+  line-height: 2.2;
+}
+footer .footer-top span:hover {
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+
+header .header {
+  display: grid;
+  grid-template-columns: 160px 1fr 200px 0px;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+  height: 80px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+header .header .logo img {
+  width: 160px;
+  height: auto;
+}
+header .header nav {
+  display: block;
+}
+header .header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+header .header nav a {
+  text-decoration: none;
+  color: red;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+}
+header .header .burger-menu {
+  display: none;
+}
+header .header .burger-menu span {
+  display: block;
+  background-color: #fff;
+  width: 40px;
+  height: 2px;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  header .header {
+    grid-template-columns: 160px 1fr 70px;
+    grid-template-areas: "logo search burger" "menu menu menu";
+    grid-template-rows: auto auto;
+    gap: 25px;
+  }
+  header .header .logo {
+    grid-area: logo;
+  }
+  header .header .search {
+    grid-area: search;
+  }
+  header .header nav {
+    grid-area: menu;
+    display: none;
+  }
+  header .header .burger-menu {
+    grid-area: burger;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-self: flex-end;
+  }
+  header .header .active nav {
+    display: flex;
+  }
+}
+@media (max-width: 500px) {
+  header .header {
+    height: 120px;
+    grid-template-columns: 160px 1fr 70px;
+    grid-template-areas: "logo burger burger" "search menu menu";
+    grid-template-rows: auto auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

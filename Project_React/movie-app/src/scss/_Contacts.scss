@@ -1,0 +1,28 @@
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $layoutWidth: 1400 - 320;
+  font-size: calc(#{$mobSize + px} * #{$addSize} * ((100vw - 320px) / 1090));
+}
+
+.contacts {
+  margin: 20px auto;
+  .contacts_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      position: relative;
+      width: 100vw;
+      z-index: 0;
+      object-fit: contain;
+    }
+    h1 {
+      position: absolute;
+      color: #fff;
+      z-index: 1;
+      @include adaptiv-font(55, 30);
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
