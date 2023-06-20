@@ -1,0 +1,41 @@
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $layoutWidth: 1400 - 320;
+  font-size: calc(#{$mobSize + px} * #{$addSize} * ((100vw - 320px) / 1090));
+}
+
+footer {
+  background-color: #000;
+  padding: 60px 30px;
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+    .mail, .phone {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    a {
+      @include adaptiv-font(45, 30);
+      font-weight: 400;
+      color: #fff;
+      transition: all 0.3s ease-out 0s;
+      font-family: "Montserrat", sans-serif;
+      text-decoration: none;
+      &:hover {
+        color: rgb(234, 186, 26);
+      }
+    }
+    span {
+      font-size: 16px;
+      color: #777;
+      line-height: 2.2;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

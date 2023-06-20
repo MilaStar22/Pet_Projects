@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Course/Front_End"
+		},
+		{
+			"path": "../qa-session(examples)"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Front_End"
+	}
+}

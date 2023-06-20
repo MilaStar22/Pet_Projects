@@ -1,0 +1,101 @@
+@import '../../node_modules/reset-css/sass/reset';
+@import "MoviesList";
+@import "SingleMovie";
+@import "Search";
+@import "MainSlider";
+@import "Contacts";
+@import "NavWithImg";
+@import "Footer";
+
+// sass src/scss/style.scss src/css/style.css --watch
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box;
+}
+header {
+  .header {
+    display: grid;
+    grid-template-columns: 160px 1fr 200px 0px;
+    background-color: black;
+    justify-content: center;
+    align-items: center; 
+    padding: 15px 10px; 
+    height: 80px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    .logo img {
+      width: 160px;
+      height: auto;
+    }
+    nav {
+      display: block;
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;  
+      }
+      a {
+        text-decoration: none;
+        // color: #fff;
+        color: red;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 28px;
+      }
+    }
+    .burger-menu {
+      display: none;
+      span {
+        display: block;
+        background-color: #fff;
+        width: 40px;
+        height: 2px;
+      }
+    }
+  }
+}
+main {
+  padding: 2rem 0;
+}
+@media (max-width: 768px) {
+  header .header {
+    grid-template-columns: 160px 1fr 70px;
+    grid-template-areas: "logo search burger"
+                          "menu menu menu";
+    grid-template-rows: auto auto;
+    gap: 25px;
+    .logo {
+      grid-area: logo;
+    }
+    .search {
+      grid-area: search;
+    }
+    nav {
+      grid-area: menu;
+      display: none;
+    }
+    .burger-menu {
+      grid-area: burger;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      justify-self: flex-end;
+    }
+  }
+  header .header .active nav {
+      display: flex;
+  }
+}
+@media (max-width: 500px) {
+  header .header {
+    height: 120px;
+    grid-template-columns: 160px 1fr 70px;
+    grid-template-areas: "logo burger burger"
+                         "search menu menu";
+    grid-template-rows: auto auto;
+  }
+}
