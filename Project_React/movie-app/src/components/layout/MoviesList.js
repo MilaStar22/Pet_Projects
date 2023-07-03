@@ -5,10 +5,11 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import { Typography } from "@mui/material";
 import defaultImage from "../img/default_img.png";
+import sprite from "../img/sprites.svg";
 
-const baseURL = 'https://api.themoviedb.org/3/discover/movie/';
+const baseURL = 'https://api.themoviedb.org/3/discover/movie';
 const baseSearchURL = 'https://api.themoviedb.org/3/search/movie';
-const apiKey = 'b03d508a9e788070ca877f98f3f8bbba';
+const apiKey = '307fd0a82be6c313814e4ab1e538e172';
 const imgBaseURL = "https://image.tmdb.org/t/p/w500";
 const genresURL = 'https://api.themoviedb.org/3/genre/movie/list';
 
@@ -119,9 +120,16 @@ function MoviesList() {
               e.target.src = defaultImage;
             }}
           />
-          <h2>{movie.title}</h2>
-          <p>{genre}</p>
-          <Link to={ "/movie/" + movie.id }> More </Link>
+          <div className="about">
+            <h2>{movie.title}</h2>
+            <p>{genre}</p>
+          </div>
+          <div className="favorite">
+            <Link to={ "/movie/" + movie.id }> More </Link>
+            <button to={'/movie/' + movie.id}>
+              <svg className="svg"><use href={sprite + "#favorite"} /></svg>
+            </button>
+          </div>
         </div>
       )
     });
@@ -130,10 +138,11 @@ function MoviesList() {
 
     return (
       <>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="search_form">
           <label>
             <input 
               type="text"
+              placeholder="...enter film"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -145,7 +154,7 @@ function MoviesList() {
           </label>
           <input type="submit" value="Search" />
         </form>
-        <div className="movies">{ items }</div>
+        <div className="movies container">{ items }</div>
         <div className="pagination">
           <Stack spacing={4}>
             <Typography>Current page: {page}</Typography>

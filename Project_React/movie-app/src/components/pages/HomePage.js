@@ -7,10 +7,7 @@ function HomePage () {
   }, []);
 
   return (
-    <div>
-      Home Page
-      <MainSlider />
-    </div>
+    <MainSlider />
   )
 }
 

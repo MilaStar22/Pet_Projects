@@ -1,11 +1,95 @@
+@use "./mixins";
+
+.search_form {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  flex-wrap: wrap;
+  input, label {
+    border: 2px solid rgb(90, 88, 88);
+    border-radius: 5px;
+  }
+  input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 15px;
+    width: 100px;
+    &:hover {
+      background-color: rgb(234, 186, 26);
+      background-image: linear-gradient(to right, rgba(234,186,26,0), rgba(255,0,0,0.6));
+      cursor: pointer;
+    }
+  }
+}
 .movies {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 25px;
   .movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
     img {
       width: 100%;
       height: auto;
+      border-radius: 10px; 
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+      margin-top: 10px;
+      h2 {
+        font-weight: 600;
+        @include mixins.adaptiv-font(20, 18);
+      }
+      p {
+        font-weight: 300;
+        @include mixins.adaptiv-font(16, 13);
+      }
+    }
+    .favorite {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        padding: 10px 15px;
+        color: #fff;
+        text-align: center;
+        @include mixins.adaptiv-font(18, 13);
+        &:hover {
+          background-color: rgb(234, 186, 26);
+          background-image: linear-gradient(to right, rgba(234,186,26,0), rgba(255,0,0,0.6));
+          cursor: pointer;
+        }
+      }
+      button {
+        border-radius: 30%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        border: 1px solid #959292;
+        svg {
+          fill: #090909;
+        }
+        &:hover {
+          background-color: rgb(234, 186, 26);
+          background-image: linear-gradient(to right, rgba(234,186,26,0), rgba(255,0,0,0.6));    
+        }
+      }
     }
   }
 }
